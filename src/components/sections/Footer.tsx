@@ -33,7 +33,7 @@ export function Footer({ logo, logoImage, tagline, links }: FooterProps) {
       >
         {tagline}
       </span>
-      <ul className="flex gap-7">
+      <ul className="flex flex-wrap gap-x-7 gap-y-2">
         {links.map((link) => (
           <li key={link.href}>
             <Link
