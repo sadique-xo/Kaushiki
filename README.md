@@ -1,4 +1,4 @@
-# Kaushiki Kumari — Website
+# Kaushiki Kumari - Website
 
 Psychology Creator & Aesthetic Visionary. A clean, editorial Next.js website.
 
@@ -22,8 +22,8 @@ Open [http://localhost:3000](http://localhost:3000).
 
 ## Build Phases
 
-1. **Phase 1 — Setup** ✅ Done
-2. **Phase 2 — Content** Extract HTML → `.md` files in `content/`
-3. **Phase 3 — Build** Assemble sections with shadcn, Magic UI, Aceternity
+1. **Phase 1 - Setup** ✅ Done
+2. **Phase 2 - Content** Extract HTML → `.md` files in `content/`
+3. **Phase 3 - Build** Assemble sections with shadcn, Magic UI, Aceternity
 
 See [PLAN.md](./PLAN.md) for the full roadmap.

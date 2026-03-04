@@ -1,6 +1,6 @@
-# Kaushiki Kumari Website — Build Plan
+# Kaushiki Kumari Website - Build Plan
 
-A Next.js website for **Kaushiki Kumari** — Psychology Creator & Aesthetic Visionary. Clean, editorial, warm aesthetic.
+A Next.js website for **Kaushiki Kumari** - Psychology Creator & Aesthetic Visionary. Clean, editorial, warm aesthetic.
 
 ---
 
@@ -10,7 +10,7 @@ A Next.js website for **Kaushiki Kumari** — Psychology Creator & Aesthetic Vis
 - [x] Install deps: clsx, tailwind-merge, framer-motion, lucide-react
 - [x] Configure fonts: Cormorant Garamond, Syne, DM Mono
 - [x] Set up design tokens (warm cream, accent, ink palette)
-- [ ] Magic UI & Aceternity — add components in Phase 3 as needed
+- [ ] Magic UI & Aceternity - add components in Phase 3 as needed
 
 ---
 
@@ -71,6 +71,6 @@ Build each section using shadcn + Magic UI + Aceternity:
 ```
 
 ## Fonts
-- **Cormorant Garamond** — Headlines, serif
-- **Syne** — Body, sans
-- **DM Mono** — Eyebrows, labels
+- **Cormorant Garamond** - Headlines, serif
+- **Syne** - Body, sans
+- **DM Mono** - Eyebrows, labels

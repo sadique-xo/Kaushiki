@@ -1,5 +1,6 @@
 "use client";
 
+import React from "react";
 import { motion } from "framer-motion";
 
 type RateItem = {
@@ -23,7 +24,7 @@ type RateCardProps = {
 
 function parseTitle(title: string) {
   return title.split(/\*(.+?)\*/).map((p, i) =>
-    i % 2 === 1 ? <em key={i} className="text-[var(--accent)]">{p}</em> : p
+    i % 2 === 1 ? <em key={i} className="text-accent">{p}</em> : p
   );
 }
 
@@ -35,13 +36,13 @@ export function RateCard({
   note,
 }: RateCardProps) {
   return (
-    <section id="ratecard" className="bg-[var(--cream)]">
+    <section id="ratecard" className="bg-cream">
       <div className="mx-auto max-w-[1160px] px-6 py-24 md:px-14">
         <motion.span
           initial={{ opacity: 0, y: 28 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="inline-flex items-center gap-3 font-mono text-[9.5px] uppercase tracking-[0.26em] text-[var(--accent)] after:h-px after:w-7 after:bg-[var(--accent)] after:opacity-50"
+          className="inline-flex items-center gap-3 font-mono text-[9.5px] uppercase tracking-[0.26em] text-accent after:h-px after:w-7 after:bg-accent after:opacity-50"
           style={{ fontFamily: "var(--font-dm-mono)" }}
         >
           {eyebrow}
@@ -51,7 +52,7 @@ export function RateCard({
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ delay: 0.1 }}
-          className="mb-5 font-serif text-[clamp(34px,4.2vw,58px)] font-light leading-tight text-[var(--ink)]"
+          className="mb-5 font-serif text-[clamp(34px,4.2vw,58px)] font-light leading-tight text-ink"
           style={{ fontFamily: "var(--font-heading)" }}
         >
           {parseTitle(title)}
@@ -61,7 +62,7 @@ export function RateCard({
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ delay: 0.18 }}
-          className="mb-14 max-w-[560px] text-[15px] leading-[1.85] text-[var(--ink-soft)]"
+          className="mb-14 max-w-[560px] text-[15px] leading-[1.85] text-ink-soft"
         >
           {intro}
         </motion.p>
@@ -74,25 +75,25 @@ export function RateCard({
         >
           <table className="w-full">
             <thead>
-              <tr className="bg-[var(--ink)]">
-                <th className="px-6 py-4 text-left font-mono text-[9.5px] font-normal uppercase tracking-[0.22em] text-[var(--accent)]">
+              <tr className="bg-ink">
+                <th className="px-6 py-4 text-left font-mono text-[9.5px] font-normal uppercase tracking-[0.22em] text-accent">
                   Service
                 </th>
-                <th className="px-6 py-4 text-left font-mono text-[9.5px] font-normal uppercase tracking-[0.22em] text-[var(--accent)]">
+                <th className="px-6 py-4 text-left font-mono text-[9.5px] font-normal uppercase tracking-[0.22em] text-accent">
                   Details
                 </th>
-                <th className="px-6 py-4 text-left font-mono text-[9.5px] font-normal uppercase tracking-[0.22em] text-[var(--accent)]">
+                <th className="px-6 py-4 text-left font-mono text-[9.5px] font-normal uppercase tracking-[0.22em] text-accent">
                   Starting Rate
                 </th>
               </tr>
             </thead>
             <tbody>
               {rows.map((cat) => (
-                <>
-                  <tr key={cat.category} className="bg-[rgba(235,76,76,0.07)]">
+                <React.Fragment key={cat.category}>
+                  <tr className="bg-[rgba(235,76,76,0.07)]">
                     <td
                       colSpan={3}
-                      className="border-none px-6 py-2.5 font-mono text-[9px] font-normal uppercase tracking-[0.22em] text-[var(--accent)]"
+                      className="border-none px-6 py-2.5 font-mono text-[9px] font-normal uppercase tracking-[0.22em] text-accent"
                     >
                       ✦ &nbsp; {cat.category}
                     </td>
@@ -102,18 +103,18 @@ export function RateCard({
                       key={item.service}
                       className="transition-colors hover:bg-[rgba(235,76,76,0.04)]"
                     >
-                      <td className="border-b border-[var(--border-light)] px-6 py-4 text-[14px] font-semibold text-[var(--ink)]">
+                      <td className="border-b border-border-light px-6 py-4 text-[14px] font-semibold text-ink">
                         {item.service}
                       </td>
-                      <td className="border-b border-[var(--border-light)] px-6 py-4 text-[13.5px] leading-[1.5] text-[var(--ink-soft)]">
+                      <td className="border-b border-border-light px-6 py-4 text-[13.5px] leading-normal text-ink-soft">
                         {item.details}
                       </td>
-                      <td className="whitespace-nowrap border-b border-[var(--border-light)] px-6 py-4 font-serif text-xl font-normal text-[var(--ink)]">
+                      <td className="whitespace-nowrap border-b border-border-light px-6 py-4 font-serif text-xl font-normal text-ink">
                         {item.rate}
                       </td>
                     </tr>
                   ))}
-                </>
+                </React.Fragment>
               ))}
             </tbody>
           </table>
@@ -123,7 +124,7 @@ export function RateCard({
           initial={{ opacity: 0, y: 28 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="border border-[var(--border-light)] bg-[var(--warm-white)] p-6 text-[13px] italic leading-[1.75] text-[var(--muted-color)]"
+          className="border border-border-light bg-warm-white p-6 text-[13px] italic leading-[1.75] text-muted-color"
         >
           <span
             dangerouslySetInnerHTML={{
@@ -131,7 +132,7 @@ export function RateCard({
                 .replace(/\*\*(.+?)\*\*/g, "<strong>$1</strong>")
                 .replace(
                   /\[([^\]]+)\]\((mailto:[^)]+)\)/g,
-                  '<a href="$2" class="text-[var(--accent)] no-underline">$1</a>'
+                  '<a href="$2" class="text-accent no-underline">$1</a>'
                 ),
             }}
           />

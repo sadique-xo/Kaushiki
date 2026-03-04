@@ -1,4 +1,4 @@
-# Content — Kaushiki Website
+# Content - Kaushiki Website
 
 Content extracted from the reference HTML into structured markdown files with YAML frontmatter.
 

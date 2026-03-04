@@ -1,11 +1,8 @@
 ---
-logo: "Kaushiki"
 logoHref: "#hero"
 links:
   - label: "About"
     href: "#about"
-  - label: "Work"
-    href: "#niche"
   - label: "Packages"
     href: "#packages"
   - label: "Rates"
@@ -14,7 +11,6 @@ links:
     href: "#mediakit"
   - label: "Collaborate"
     href: "#collab"
-  - label: "Let's Talk"
+  - label: "Contact"
     href: "#contact"
-    cta: true
 ---

@@ -19,7 +19,7 @@ const KAUSHIKI_IMAGES = [
 export function ImageTrailSection() {
   return (
     <section
-      className="relative overflow-hidden bg-[var(--cream)] py-16 md:py-24"
+      className="relative overflow-hidden bg-cream py-16 md:py-24"
       aria-label="Image gallery"
     >
       <div

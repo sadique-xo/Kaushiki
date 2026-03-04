@@ -1,7 +1,7 @@
 ---
 eyebrow: "Let's Create"
-title: "If your brand wants *depth —*\nwe should talk."
-body: "Whether you're a brand looking to collaborate, a person who wants to book a session, or someone with a creative brief — I'm open to the right conversations."
+title: "If your brand wants *depth -*\nwe should talk."
+body: "Whether you're a brand looking to collaborate, a person who wants to book a session, or someone with a creative brief - I'm open to the right conversations."
 powerLine: "Substance + strategy + aesthetic clarity. That's the offer."
 details:
   - label: "Email"

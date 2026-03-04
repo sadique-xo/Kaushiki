@@ -22,7 +22,7 @@ const dmMono = DM_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Kaushiki Kumari — Psychology Creator & Aesthetic Visionary",
+  title: "Kaushiki Kumari - Psychology Creator & Aesthetic Visionary",
   description:
     "Psychology-backed content creator. Emotional intelligence educator. Aesthetic visionary. Turning psychology into content Gen Z actually connects with.",
 };

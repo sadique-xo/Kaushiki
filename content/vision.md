@@ -9,7 +9,7 @@ goals:
   - "Turning psychology into something people want to live, not just learn"
 ---
 
-I'm not building a following. I'm building a community that grows intelligently — not impulsively. One that treats emotional intelligence as aspirational, depth as attractive, and self-awareness as culturally relevant.
+I'm not building a following. I'm building a community that grows intelligently - not impulsively. One that treats emotional intelligence as aspirational, depth as attractive, and self-awareness as culturally relevant.
 
 This is a long game. And it's played with intention.
 

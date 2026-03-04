@@ -1,7 +1,7 @@
 ---
 eyebrow: "Service Packages"
 title: "Pick your *depth*."
-intro: "Every offering is built around intentionality — not volume. Choose the format that fits where you are, and we'll shape it around what you actually need."
+intro: "Every offering is built around intentionality - not volume. Choose the format that fits where you are, and we'll shape it around what you actually need."
 tabs:
   - id: "listening"
     label: "Listening Friend"
@@ -17,7 +17,7 @@ panels:
       name: "The Check-In"
       price: "₹299"
       period: "One session · 30 minutes"
-      description: "A focused space to talk through one thing — a situation, a feeling, a decision you can't stop circling. No agenda. Just presence."
+      description: "A focused space to talk through one thing - a situation, a feeling, a decision you can't stop circling. No agenda. Just presence."
       features:
         - "30-min voice or chat session"
         - "Psychologically aware listening"
@@ -31,7 +31,7 @@ panels:
       period: "One session · 60 minutes"
       featured: true
       badge: "Most Booked"
-      description: "A full hour to go deeper — patterns, relationships, emotional loops, identity. This is where real processing happens."
+      description: "A full hour to go deeper - patterns, relationships, emotional loops, identity. This is where real processing happens."
       features:
         - "60-min voice or chat session"
         - "Psychology-backed reflection"
@@ -58,7 +58,7 @@ panels:
       name: "The One"
       price: "₹499"
       period: "Per piece · up to 600 words"
-      description: "One powerful piece of writing — a monologue, essay, brand caption, or reflective script. Built with emotional precision."
+      description: "One powerful piece of writing - a monologue, essay, brand caption, or reflective script. Built with emotional precision."
       features:
         - "1 original piece (any format)"
         - "1 round of revisions"
@@ -85,7 +85,7 @@ panels:
       name: "The Voice"
       price: "₹3,499"
       period: "Full brand writing sprint"
-      description: "For brands that need their tone nailed. About pages, campaign copy, content scripts — all in one unified voice."
+      description: "For brands that need their tone nailed. About pages, campaign copy, content scripts - all in one unified voice."
       features:
         - "Brand voice analysis + positioning doc"
         - "Up to 10 pieces of copy"
@@ -99,7 +99,7 @@ panels:
       name: "The Wallpaper"
       price: "₹199"
       period: "1 custom digital wallpaper"
-      description: "One emotionally intelligent, mood-driven wallpaper designed around a theme you choose — healing, identity, love, ambition, growth."
+      description: "One emotionally intelligent, mood-driven wallpaper designed around a theme you choose - healing, identity, love, ambition, growth."
       features:
         - "Custom theme consultation"
         - "Phone + desktop sizes"
@@ -126,7 +126,7 @@ panels:
       name: "The Aesthetic Sprint"
       price: "₹2,499"
       period: "Full visual identity for a campaign"
-      description: "For creators or brands who need their aesthetic brought to life — moodboarding, color story, visual direction, template design."
+      description: "For creators or brands who need their aesthetic brought to life - moodboarding, color story, visual direction, template design."
       features:
         - "Full moodboard development"
         - "Color palette + typography guide"
@@ -140,7 +140,7 @@ panels:
       name: "The Feature"
       price: "₹4,999"
       period: "Single content integration"
-      description: "One piece of content — a reel, carousel, or story set — where your brand is woven into a psychologically resonant narrative. Not an ad. A story."
+      description: "One piece of content - a reel, carousel, or story set - where your brand is woven into a psychologically resonant narrative. Not an ad. A story."
       features:
         - "1 branded reel or carousel"
         - "Original concept ideation"
@@ -155,7 +155,7 @@ panels:
       period: "3-piece campaign · 30 days"
       featured: true
       badge: "Recommended"
-      description: "A three-part content campaign that tells a complete story around your brand — emotionally, visually, and narratively."
+      description: "A three-part content campaign that tells a complete story around your brand - emotionally, visually, and narratively."
       features:
         - "3 branded content pieces"
         - "Full campaign concept + brief"
@@ -180,7 +180,7 @@ panels:
       cta: "Enquire"
       ctaSubject: "Brand Collab: Long Game Retainer"
 customRow:
-  text: '"None of these feel quite right? Good. That means you probably need something custom — and that''s exactly the kind of brief I enjoy most."'
+  text: '"None of these feel quite right? Good. That means you probably need something custom - and that''s exactly the kind of brief I enjoy most."'
   cta: "Send Your Brief"
   ctaSubject: "Custom Brief"
 email: "kashsupernova@gmail.com"

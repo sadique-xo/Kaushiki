@@ -26,7 +26,7 @@ type MediaKitProps = {
 
 function parseTitle(title: string) {
   return title.split(/\*(.+?)\*/).map((p, i) =>
-    i % 2 === 1 ? <em key={i} className="text-[var(--accent)]">{p}</em> : p
+    i % 2 === 1 ? <em key={i} className="text-accent">{p}</em> : p
   );
 }
 
@@ -48,7 +48,7 @@ function MkBlock({
       className="border border-[rgba(255,255,255,0.07)] bg-[rgba(255,255,255,0.03)] p-8 transition-colors hover:bg-[rgba(255,255,255,0.05)]"
     >
       <span
-        className="mb-5 block font-mono text-[8.5px] uppercase tracking-[0.26em] text-[var(--blush)]"
+        className="mb-5 block font-mono text-[8.5px] uppercase tracking-[0.26em] text-blush"
         style={{ fontFamily: "var(--font-dm-mono)" }}
       >
         {label}
@@ -73,14 +73,14 @@ export function MediaKit({
   return (
     <section
       id="mediakit"
-      className="border-t border-[rgba(255,255,255,0.06)] bg-[var(--ink)]"
+      className="border-t border-[rgba(255,255,255,0.06)] bg-ink"
     >
       <div className="mx-auto max-w-[1160px] px-6 py-24 md:px-14">
         <motion.span
           initial={{ opacity: 0, y: 28 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="inline-flex items-center gap-3 font-mono text-[9.5px] uppercase tracking-[0.26em] text-[var(--blush)] after:h-px after:w-7 after:bg-[var(--blush)] after:opacity-50"
+          className="inline-flex items-center gap-3 font-mono text-[9.5px] uppercase tracking-[0.26em] text-blush after:h-px after:w-7 after:bg-blush after:opacity-50"
           style={{ fontFamily: "var(--font-dm-mono)" }}
         >
           {eyebrow}
@@ -90,7 +90,7 @@ export function MediaKit({
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ delay: 0.1 }}
-          className="mb-5 font-serif text-[clamp(34px,4.2vw,58px)] font-light leading-tight text-[var(--warm-white)]"
+          className="mb-5 font-serif text-[clamp(34px,4.2vw,58px)] font-light leading-tight text-warm-white"
           style={{ fontFamily: "var(--font-heading)" }}
         >
           {parseTitle(title)}
@@ -115,7 +115,7 @@ export function MediaKit({
                 >
                   {item.label}
                   <span
-                    className="whitespace-nowrap font-serif text-[17px] text-[var(--accent)]"
+                    className="whitespace-nowrap font-serif text-[17px] text-accent"
                     style={{ fontFamily: "var(--font-heading)" }}
                   >
                     {item.value}
@@ -133,7 +133,7 @@ export function MediaKit({
                 >
                   {item.label}
                   <span
-                    className="whitespace-nowrap font-serif text-[17px] text-[var(--accent)]"
+                    className="whitespace-nowrap font-serif text-[17px] text-accent"
                     style={{ fontFamily: "var(--font-heading)" }}
                   >
                     {item.value}
@@ -150,7 +150,7 @@ export function MediaKit({
               {tone.tags.map((tag) => (
                 <span
                   key={tag}
-                  className="border border-[rgba(255,255,255,0.1)] px-3.5 py-1.5 text-[11.5px] text-[rgba(255,255,255,0.58)] transition-all hover:border-[var(--accent)] hover:bg-[var(--accent)] hover:text-[var(--ink)]"
+                  className="border border-[rgba(255,255,255,0.1)] px-3.5 py-1.5 text-[11.5px] text-[rgba(255,255,255,0.58)] transition-all hover:border-accent hover:bg-accent hover:text-ink"
                 >
                   {tag}
                 </span>
@@ -165,7 +165,7 @@ export function MediaKit({
                   className="flex items-center justify-between border-b border-[rgba(255,255,255,0.06)] py-3 text-[13px] text-[rgba(255,255,255,0.65)]"
                 >
                   {item.name}
-                  <span className="text-[10px] uppercase tracking-[0.1em] text-[var(--accent)]">
+                  <span className="text-[10px] uppercase tracking-[0.1em] text-accent">
                     {item.type}
                   </span>
                 </div>
@@ -191,7 +191,7 @@ export function MediaKit({
             {upcoming.tags.map((tag) => (
               <span
                 key={tag}
-                className="border border-[rgba(255,255,255,0.1)] px-3.5 py-1.5 text-[11.5px] text-[rgba(255,255,255,0.58)] transition-all hover:border-[var(--accent)] hover:bg-[var(--accent)] hover:text-[var(--ink)]"
+                className="border border-[rgba(255,255,255,0.1)] px-3.5 py-1.5 text-[11.5px] text-[rgba(255,255,255,0.58)] transition-all hover:border-accent hover:bg-accent hover:text-ink"
               >
                 {tag}
               </span>
@@ -208,7 +208,7 @@ export function MediaKit({
         >
           <div>
             <h3
-              className="mb-1.5 font-serif text-[30px] font-light italic text-[var(--warm-white)]"
+              className="mb-1.5 font-serif text-[30px] font-light italic text-warm-white"
               style={{ fontFamily: "var(--font-heading)" }}
             >
               {cta.title}
@@ -220,7 +220,7 @@ export function MediaKit({
           <div className="flex flex-wrap gap-3">
             <Link
               href={`mailto:${cta.email}?subject=${encodeURIComponent(cta.primarySubject)}`}
-              className="inline-block bg-[var(--accent)] px-7 py-3 text-[10.5px] font-medium uppercase tracking-[0.16em] text-[var(--warm-white)] no-underline transition-colors hover:bg-[var(--warm-white)] hover:text-[var(--ink)]"
+              className="inline-block bg-accent px-7 py-3 text-[10.5px] font-medium uppercase tracking-[0.16em] text-warm-white no-underline transition-colors hover:bg-warm-white hover:text-ink"
             >
               {cta.primaryCta}
             </Link>

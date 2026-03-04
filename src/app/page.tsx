@@ -1,5 +1,5 @@
 import { getContent } from "@/lib/content";
-import { Nav } from "@/components/sections/Nav";
+import PillNav from "@/components/PillNav";
 import { Hero } from "@/components/sections/Hero";
 import { Marquee } from "@/components/sections/Marquee";
 import { About } from "@/components/sections/About";
@@ -13,13 +13,13 @@ import { MediaKit } from "@/components/sections/MediaKit";
 import { Collab } from "@/components/sections/Collab";
 import { Vision } from "@/components/sections/Vision";
 import { Contact } from "@/components/sections/Contact";
+import { BookCall } from "@/components/sections/BookCall";
 import { Footer } from "@/components/sections/Footer";
 
 export default function Home() {
   const nav = getContent<{
-    logo: string;
     logoHref: string;
-    links: { label: string; href: string; cta?: boolean }[];
+    links: { label: string; href: string }[];
   }>("nav");
   const hero = getContent<{
     eyebrow: string;
@@ -129,22 +129,22 @@ export default function Home() {
     body: string;
     powerLine: string;
     details: { label: string; value: string; href?: string; type: string }[];
-    form: {
-      title: string;
-      description: string;
-      fields: { name: string; label: string; type: string; placeholder?: string; options?: string[] }[];
-      submitLabel: string;
-    };
   }>("contact");
   const footer = getContent<{
     logo: string;
+    logoImage?: string;
     tagline: string;
     links: { label: string; href: string }[];
   }>("footer");
 
   return (
-    <main className="min-h-screen bg-[var(--warm-white)]">
-      <Nav {...nav.data} />
+    <main className="min-h-screen bg-warm-white">
+      <PillNav
+        logo="/images-kaushiki/Kaushiki profile image.jpg"
+        logoAlt="Kaushiki"
+        logoHref={nav.data.logoHref}
+        items={nav.data.links}
+      />
       <Hero {...hero.data} />
       <Marquee {...marquee.data} />
       <About {...about.data} />
@@ -158,6 +158,7 @@ export default function Home() {
       <Collab {...collab.data} />
       <Vision {...vision.data} />
       <Contact {...contact.data} />
+      <BookCall />
       <Footer {...footer.data} />
     </main>
   );

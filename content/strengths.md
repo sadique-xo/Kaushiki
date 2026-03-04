@@ -1,7 +1,7 @@
 ---
 eyebrow: "Creative Strengths"
 title: "What I bring\nto the *table*."
-body: "These aren't just skills — they're the result of studying human behavior, training creative instincts, and building systems for how emotion translates into content that converts."
+body: "These aren't just skills - they're the result of studying human behavior, training creative instincts, and building systems for how emotion translates into content that converts."
 skills:
   - "Psychology-backed storytelling"
   - "Deep narrative writing & monologue crafting"
@@ -25,5 +25,5 @@ whyPanel:
     - label: "Why people attach to brands"
       text: "Because I understand identity, and I build content that speaks to it."
     - label: "The result?"
-      text: "Content that doesn't just perform — it resonates. And resonance converts."
+      text: "Content that doesn't just perform - it resonates. And resonance converts."
 ---

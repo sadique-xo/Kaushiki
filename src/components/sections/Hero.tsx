@@ -31,7 +31,7 @@ type HeroProps = {
 function parseEm(text: string) {
   const parts = text.split(/\*(.+?)\*/);
   return parts.map((p, i) =>
-    i % 2 === 1 ? <em key={i} className="text-[var(--accent)]">{p}</em> : p
+    i % 2 === 1 ? <em key={i} className="text-accent">{p}</em> : p
   );
 }
 
@@ -47,7 +47,7 @@ export function Hero({
   return (
     <section
       id="hero"
-      className="relative grid min-h-screen grid-rows-[1fr_auto] bg-[var(--warm-white)] px-6 pt-16 md:px-14"
+      className="relative grid min-h-screen grid-rows-[1fr_auto] bg-warm-white px-6 pt-16 md:px-14"
     >
       {decoLetter && (
         <span
@@ -64,7 +64,7 @@ export function Hero({
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.75, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
-          className="mb-7 font-mono text-[10px] uppercase tracking-[0.26em] text-[var(--accent)]"
+          className="mb-7 font-mono text-[10px] uppercase tracking-[0.26em] text-accent"
           style={{ fontFamily: "var(--font-dm-mono)" }}
         >
           {eyebrow}
@@ -73,17 +73,17 @@ export function Hero({
           initial={{ opacity: 0, y: 24 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.85, delay: 0.38, ease: [0.16, 1, 0.3, 1] }}
-          className="mb-9 font-serif text-[clamp(72px,11.5vw,148px)] font-light leading-[0.91] tracking-[-0.03em] text-[var(--ink)]"
+          className="mb-9 font-serif text-[clamp(72px,11.5vw,148px)] font-light leading-[0.91] tracking-[-0.03em] text-ink"
           style={{ fontFamily: "var(--font-heading)" }}
         >
           {firstName}
-          <em className="block text-[var(--accent)]">{lastName}</em>
+          <em className="block text-accent">{lastName}</em>
         </motion.h1>
         <motion.p
           initial={{ opacity: 0, y: 24 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.85, delay: 0.56, ease: [0.16, 1, 0.3, 1] }}
-          className="mb-12 max-w-[530px] font-serif text-[clamp(18px,2.3vw,26px)] font-light italic leading-[1.55] text-[var(--ink-soft)]"
+          className="mb-12 max-w-[530px] font-serif text-[clamp(18px,2.3vw,26px)] font-light italic leading-[1.55] text-ink-soft"
           style={{ fontFamily: "var(--font-heading)" }}
         >
           {tagline}
@@ -100,10 +100,10 @@ export function Hero({
               href={cta.href}
               className={
                 cta.variant === "primary"
-                  ? "inline-block bg-[var(--ink)] px-9 py-3.5 text-[10.5px] font-semibold uppercase tracking-[0.18em] text-[var(--warm-white)] no-underline transition-all hover:bg-[var(--accent)] hover:-translate-y-0.5"
+                  ? "inline-block bg-ink px-9 py-3.5 text-[10.5px] font-semibold uppercase tracking-[0.18em] text-warm-white no-underline transition-all hover:bg-accent hover:-translate-y-0.5"
                   : cta.variant === "outline"
-                    ? "inline-block border border-[var(--border-md)] px-7 py-3.5 text-[10.5px] font-medium uppercase tracking-[0.16em] text-[var(--ink-soft)] no-underline transition-colors hover:border-[var(--accent)] hover:text-[var(--accent)]"
-                    : "border-b border-[var(--border-md)] pb-0.5 text-[10.5px] font-medium uppercase tracking-[0.15em] text-[var(--muted-color)] no-underline transition-colors hover:border-[var(--accent)] hover:text-[var(--accent)]"
+                    ? "inline-block border border-border-md px-7 py-3.5 text-[10.5px] font-medium uppercase tracking-[0.16em] text-ink-soft no-underline transition-colors hover:border-accent hover:text-accent"
+                    : "border-b border-border-md pb-0.5 text-[10.5px] font-medium uppercase tracking-[0.15em] text-muted-color no-underline transition-colors hover:border-accent hover:text-accent"
               }
             >
               {cta.label}
@@ -123,18 +123,18 @@ export function Hero({
         initial={{ opacity: 0, y: 24 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.75, delay: 0.9, ease: [0.16, 1, 0.3, 1] }}
-        className="relative z-10 flex flex-wrap items-center gap-x-9 border-t border-[var(--border-light)] py-7"
+        className="relative z-10 flex flex-wrap items-center gap-x-9 border-t border-border-light py-7"
       >
         {roles.map((role, i) => (
           <span key={role} className="flex items-center gap-4">
             <span
-              className="font-mono text-[10px] uppercase tracking-[0.18em] text-[var(--muted-color)]"
+              className="font-mono text-[10px] uppercase tracking-[0.18em] text-muted-color"
               style={{ fontFamily: "var(--font-dm-mono)" }}
             >
               {role}
             </span>
             {i < roles.length - 1 && (
-              <span className="text-[var(--border-md)]">/</span>
+              <span className="text-border-md">/</span>
             )}
           </span>
         ))}

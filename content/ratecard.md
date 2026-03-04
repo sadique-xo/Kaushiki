@@ -2,7 +2,7 @@
 eyebrow: "Rate Card"
 title: "Transparent pricing.\n*No guessing.*"
 intro: "All rates are in Indian Rupees (₹). International rates available on request. Prices reflect the quality, research, and intentionality that goes into every deliverable."
-note: "**A few things worth knowing:** All rates are starting prices. Complex briefs, rush timelines, or multi-platform usage rights may affect the final quote. I don't negotiate on quality — but I'm always open to a conversation about scope. International clients: rates in USD/EUR on request. Write to [kashsupernova@gmail.com](mailto:kashsupernova@gmail.com) with your brief and I'll send a custom quote within 48 hours."
+note: "**A few things worth knowing:** All rates are starting prices. Complex briefs, rush timelines, or multi-platform usage rights may affect the final quote. I don't negotiate on quality - but I'm always open to a conversation about scope. International clients: rates in USD/EUR on request. Write to [kashsupernova@gmail.com](mailto:kashsupernova@gmail.com) with your brief and I'll send a custom quote within 48 hours."
 rows:
   - category: "Listening Friend Sessions"
     items:

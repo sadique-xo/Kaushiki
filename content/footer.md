@@ -1,5 +1,6 @@
 ---
 logo: "Kaushiki Kumari"
+logoImage: "/images-kaushiki/Kaushiki profile image.jpg"
 tagline: '"Psychological clarity wrapped in aesthetic restraint."'
 links:
   - label: "About"
