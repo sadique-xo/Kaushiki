@@ -111,11 +111,11 @@ export function MediaKit({
               {platform.items.map((item) => (
                 <li
                   key={item.label}
-                  className="flex items-center justify-between gap-3 border-b border-[rgba(255,255,255,0.06)] py-3 text-[13px] text-[rgba(255,255,255,0.65)]"
+                  className="flex min-w-0 flex-wrap items-center justify-between gap-x-3 gap-y-1 border-b border-[rgba(255,255,255,0.06)] py-3 text-[13px] text-[rgba(255,255,255,0.65)]"
                 >
-                  {item.label}
+                  <span className="shrink-0">{item.label}</span>
                   <span
-                    className="whitespace-nowrap font-serif text-[17px] text-accent"
+                    className="min-w-0 text-right font-serif text-[17px] text-accent sm:whitespace-nowrap"
                     style={{ fontFamily: "var(--font-heading)" }}
                   >
                     {item.value}
@@ -129,11 +129,11 @@ export function MediaKit({
               {audience.items.map((item) => (
                 <li
                   key={item.label}
-                  className="flex items-center justify-between gap-3 border-b border-[rgba(255,255,255,0.06)] py-3 text-[13px] text-[rgba(255,255,255,0.65)]"
+                  className="flex min-w-0 flex-wrap items-center justify-between gap-x-3 gap-y-1 border-b border-[rgba(255,255,255,0.06)] py-3 text-[13px] text-[rgba(255,255,255,0.65)]"
                 >
-                  {item.label}
+                  <span className="shrink-0">{item.label}</span>
                   <span
-                    className="whitespace-nowrap font-serif text-[17px] text-accent"
+                    className="min-w-0 text-right font-serif text-[17px] text-accent sm:whitespace-nowrap"
                     style={{ fontFamily: "var(--font-heading)" }}
                   >
                     {item.value}
@@ -162,10 +162,10 @@ export function MediaKit({
               {formats.items.map((item) => (
                 <div
                   key={item.name}
-                  className="flex items-center justify-between border-b border-[rgba(255,255,255,0.06)] py-3 text-[13px] text-[rgba(255,255,255,0.65)]"
+                  className="flex min-w-0 flex-wrap items-center justify-between gap-x-3 gap-y-1 border-b border-[rgba(255,255,255,0.06)] py-3 text-[13px] text-[rgba(255,255,255,0.65)]"
                 >
-                  {item.name}
-                  <span className="text-[10px] uppercase tracking-[0.1em] text-accent">
+                  <span className="min-w-0">{item.name}</span>
+                  <span className="shrink-0 text-[10px] uppercase tracking-[0.1em] text-accent">
                     {item.type}
                   </span>
                 </div>

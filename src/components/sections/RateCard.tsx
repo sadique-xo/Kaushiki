@@ -86,8 +86,8 @@ export function RateCard({
                       key={item.service}
                       className="rounded-lg border border-border-light bg-warm-white p-4 transition-colors"
                     >
-                      <div className="flex items-start justify-between gap-3">
-                        <span className="text-[14px] font-semibold text-ink">
+                      <div className="flex min-w-0 items-start justify-between gap-3">
+                        <span className="min-w-0 break-words text-[14px] font-semibold text-ink">
                           {item.service}
                         </span>
                         <span className="shrink-0 font-serif text-lg font-normal text-ink">

@@ -62,10 +62,10 @@ export function Contact({
             {details.map((d) => (
               <li
                 key={d.label}
-                className="flex items-center gap-5 border-b border-border-light py-4 first:border-t"
+                className="flex min-w-0 flex-wrap items-center gap-x-5 gap-y-1 border-b border-border-light py-4 first:border-t"
               >
                 <span
-                  className="min-w-[72px] font-mono text-[9px] uppercase tracking-[0.2em] text-muted-color"
+                  className="min-w-[72px] shrink-0 font-mono text-[9px] uppercase tracking-[0.2em] text-muted-color"
                   style={{ fontFamily: "var(--font-dm-mono)" }}
                 >
                   {d.label}
@@ -73,12 +73,12 @@ export function Contact({
                 {d.href ? (
                   <Link
                     href={d.href}
-                    className="text-[14px] text-ink no-underline transition-colors hover:text-accent"
+                    className="min-w-0 break-words text-[14px] text-ink no-underline transition-colors hover:text-accent"
                   >
                     {d.value}
                   </Link>
                 ) : (
-                  <span className="text-[14px] text-ink">{d.value}</span>
+                  <span className="min-w-0 break-words text-[14px] text-ink">{d.value}</span>
                 )}
               </li>
             ))}
