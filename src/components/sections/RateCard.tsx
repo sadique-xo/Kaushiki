@@ -71,53 +71,87 @@ export function RateCard({
           initial={{ opacity: 0, y: 28 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="mb-10 w-full border-collapse overflow-hidden"
+          className="mb-10 w-full"
         >
-          <table className="w-full">
-            <thead>
-              <tr className="bg-ink">
-                <th className="px-6 py-4 text-left font-mono text-[9.5px] font-normal uppercase tracking-[0.22em] text-accent">
-                  Service
-                </th>
-                <th className="px-6 py-4 text-left font-mono text-[9.5px] font-normal uppercase tracking-[0.22em] text-accent">
-                  Details
-                </th>
-                <th className="px-6 py-4 text-left font-mono text-[9.5px] font-normal uppercase tracking-[0.22em] text-accent">
-                  Starting Rate
-                </th>
-              </tr>
-            </thead>
-            <tbody>
-              {rows.map((cat) => (
-                <React.Fragment key={cat.category}>
-                  <tr className="bg-[rgba(235,76,76,0.07)]">
-                    <td
-                      colSpan={3}
-                      className="border-none px-6 py-2.5 font-mono text-[9px] font-normal uppercase tracking-[0.22em] text-accent"
-                    >
-                      ✦ &nbsp; {cat.category}
-                    </td>
-                  </tr>
+          {/* Mobile: card layout — no overflow */}
+          <div className="block md:hidden space-y-4">
+            {rows.map((cat) => (
+              <div key={cat.category}>
+                <div className="mb-2 font-mono text-[9px] font-normal uppercase tracking-[0.22em] text-accent">
+                  ✦ &nbsp; {cat.category}
+                </div>
+                <div className="space-y-3">
                   {cat.items.map((item) => (
-                    <tr
+                    <div
                       key={item.service}
-                      className="transition-colors hover:bg-[rgba(235,76,76,0.04)]"
+                      className="rounded-lg border border-border-light bg-warm-white p-4 transition-colors"
                     >
-                      <td className="border-b border-border-light px-6 py-4 text-[14px] font-semibold text-ink">
-                        {item.service}
-                      </td>
-                      <td className="border-b border-border-light px-6 py-4 text-[13.5px] leading-normal text-ink-soft">
+                      <div className="flex items-start justify-between gap-3">
+                        <span className="text-[14px] font-semibold text-ink">
+                          {item.service}
+                        </span>
+                        <span className="shrink-0 font-serif text-lg font-normal text-ink">
+                          {item.rate}
+                        </span>
+                      </div>
+                      <p className="mt-1.5 text-[13px] leading-normal text-ink-soft">
                         {item.details}
-                      </td>
-                      <td className="whitespace-nowrap border-b border-border-light px-6 py-4 font-serif text-xl font-normal text-ink">
-                        {item.rate}
+                      </p>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            ))}
+          </div>
+
+          {/* Desktop: table layout */}
+          <div className="hidden md:block w-full overflow-hidden border-collapse">
+            <table className="w-full">
+              <thead>
+                <tr className="bg-ink">
+                  <th className="px-6 py-4 text-left font-mono text-[9.5px] font-normal uppercase tracking-[0.22em] text-accent">
+                    Service
+                  </th>
+                  <th className="px-6 py-4 text-left font-mono text-[9.5px] font-normal uppercase tracking-[0.22em] text-accent">
+                    Details
+                  </th>
+                  <th className="px-6 py-4 text-left font-mono text-[9.5px] font-normal uppercase tracking-[0.22em] text-accent">
+                    Starting Rate
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                {rows.map((cat) => (
+                  <React.Fragment key={cat.category}>
+                    <tr className="bg-[rgba(235,76,76,0.07)]">
+                      <td
+                        colSpan={3}
+                        className="border-none px-6 py-2.5 font-mono text-[9px] font-normal uppercase tracking-[0.22em] text-accent"
+                      >
+                        ✦ &nbsp; {cat.category}
                       </td>
                     </tr>
-                  ))}
-                </React.Fragment>
-              ))}
-            </tbody>
-          </table>
+                    {cat.items.map((item) => (
+                      <tr
+                        key={item.service}
+                        className="transition-colors hover:bg-[rgba(235,76,76,0.04)]"
+                      >
+                        <td className="border-b border-border-light px-6 py-4 text-[14px] font-semibold text-ink">
+                          {item.service}
+                        </td>
+                        <td className="border-b border-border-light px-6 py-4 text-[13.5px] leading-normal text-ink-soft">
+                          {item.details}
+                        </td>
+                        <td className="whitespace-nowrap border-b border-border-light px-6 py-4 font-serif text-xl font-normal text-ink">
+                          {item.rate}
+                        </td>
+                      </tr>
+                    ))}
+                  </React.Fragment>
+                ))}
+              </tbody>
+            </table>
+          </div>
         </motion.div>
 
         <motion.div
