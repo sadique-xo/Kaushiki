@@ -400,7 +400,7 @@ export default function PillNav({
                 <Link
                   href={item.href}
                   className={`mobile-menu-link${activeHref === item.href ? " is-active" : ""}`}
-                  onClick={() => setIsMobileMenuOpen(false)}
+                  onClick={toggleMobileMenu}
                 >
                   {item.label}
                 </Link>
@@ -408,7 +408,7 @@ export default function PillNav({
                 <a
                   href={item.href}
                   className={`mobile-menu-link${activeHref === item.href ? " is-active" : ""}`}
-                  onClick={() => setIsMobileMenuOpen(false)}
+                  onClick={toggleMobileMenu}
                 >
                   {item.label}
                 </a>

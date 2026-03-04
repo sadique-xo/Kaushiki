@@ -1,6 +1,6 @@
 .pill-nav-container {
   position: fixed;
-  top: 1em;
+  top: max(1em, env(safe-area-inset-top, 0px));
   left: 50%;
   transform: translateX(-50%);
   z-index: 200;
@@ -10,6 +10,7 @@
   .pill-nav-container {
     width: 100%;
     left: 0;
+    transform: none; /* Prevent translateX(-50%) from shifting menu off-screen */
   }
 }
 
@@ -229,6 +230,8 @@
   opacity: 0;
   transform-origin: top center;
   visibility: hidden;
+  padding-top: max(12px, env(safe-area-inset-top, 0px));
+  box-sizing: border-box;
 }
 
 .mobile-menu-list {

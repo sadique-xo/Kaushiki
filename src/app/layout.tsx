@@ -27,6 +27,12 @@ export const metadata: Metadata = {
     "Psychology-backed content creator. Emotional intelligence educator. Aesthetic visionary. Turning psychology into content Gen Z actually connects with.",
 };
 
+export const viewport = {
+  width: "device-width",
+  initialScale: 1,
+  viewportFit: "cover",
+};
+
 export default function RootLayout({
   children,
 }: Readonly<{
