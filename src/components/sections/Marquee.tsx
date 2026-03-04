@@ -10,7 +10,7 @@ export function Marquee({ words, separator = "✦" }: MarqueeProps) {
 
   return (
     <div
-      className="overflow-hidden whitespace-nowrap bg-accent py-3.5"
+      className="w-full overflow-hidden whitespace-nowrap bg-accent py-3.5"
       aria-hidden
     >
       <div className="inline-block animate-marquee">

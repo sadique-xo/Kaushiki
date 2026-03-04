@@ -47,7 +47,7 @@ export function Hero({
   return (
     <section
       id="hero"
-      className="relative grid min-h-screen grid-rows-[1fr_auto] bg-warm-white px-6 pt-16 md:px-14"
+      className="relative grid min-h-screen grid-rows-[1fr_auto] overflow-x-hidden bg-warm-white px-6 pt-16 md:px-14"
     >
       {decoLetter && (
         <span
@@ -58,13 +58,13 @@ export function Hero({
           {decoLetter}
         </span>
       )}
-      <div className="relative z-10 grid min-h-0 grid-cols-1 items-center gap-8 overflow-visible pt-14 lg:grid-cols-[1fr_1fr]">
-        <div className="flex max-w-[800px] flex-col justify-center">
+      <div className="relative z-10 grid min-h-0 min-w-0 grid-cols-1 items-center gap-8 overflow-visible pt-14 lg:grid-cols-[1fr_1fr]">
+        <div className="flex min-w-0 max-w-[800px] flex-col justify-center">
         <motion.span
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.75, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
-          className="mb-7 font-mono text-[10px] uppercase tracking-[0.26em] text-accent"
+          className="mb-7 font-mono text-[10px] uppercase tracking-[0.26em] text-accent md:whitespace-nowrap wrap-break-word"
           style={{ fontFamily: "var(--font-dm-mono)" }}
         >
           {eyebrow}
@@ -92,7 +92,7 @@ export function Hero({
           initial={{ opacity: 0, y: 24 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.85, delay: 0.72, ease: [0.16, 1, 0.3, 1] }}
-          className="flex flex-wrap items-center gap-6"
+          className="flex flex-wrap items-center gap-4 sm:gap-6"
         >
           {ctas.map((cta) => (
             <Link
@@ -123,18 +123,18 @@ export function Hero({
         initial={{ opacity: 0, y: 24 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.75, delay: 0.9, ease: [0.16, 1, 0.3, 1] }}
-        className="relative z-10 flex flex-wrap items-center gap-x-9 border-t border-border-light py-7"
+        className="relative z-10 flex min-w-0 flex-wrap items-center justify-center gap-x-4 gap-y-2 border-t border-border-light py-7 sm:justify-start sm:gap-x-9"
       >
         {roles.map((role, i) => (
-          <span key={role} className="flex items-center gap-4">
+          <span key={role} className="flex shrink-0 items-center gap-2 sm:gap-4">
             <span
-              className="font-mono text-[10px] uppercase tracking-[0.18em] text-muted-color"
+              className="whitespace-nowrap font-mono text-[10px] uppercase tracking-[0.18em] text-muted-color"
               style={{ fontFamily: "var(--font-dm-mono)" }}
             >
               {role}
             </span>
             {i < roles.length - 1 && (
-              <span className="text-border-md">/</span>
+              <span className="shrink-0 text-border-md">/</span>
             )}
           </span>
         ))}

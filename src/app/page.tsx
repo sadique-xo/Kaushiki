@@ -138,7 +138,7 @@ export default function Home() {
   }>("footer");
 
   return (
-    <main className="min-h-screen bg-warm-white">
+    <main className="min-h-screen overflow-x-hidden bg-warm-white">
       <PillNav
         logo="/images-kaushiki/Kaushiki profile image.jpg"
         logoAlt="Kaushiki"
