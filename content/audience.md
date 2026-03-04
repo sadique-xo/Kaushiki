@@ -1,0 +1,26 @@
+---
+eyebrow: "My Audience"
+title: "People who are *done*\nwith shallow."
+theme: "dark"
+body: "My audience doesn't scroll passively. They read every word, save every post, and share content that articulates what they couldn't. They're emotionally literate, aesthetically aware, and deeply tired of content that treats them like an impression rather than a person."
+tags:
+  - "Emotionally Aware Gen Z"
+  - "Healing Attachment Patterns"
+  - "Deep Thinkers"
+  - "Navigating Relationships"
+  - "Grounded Self-Development"
+  - "Aesthetic-Conscious"
+  - "Substance Seekers"
+  - "Psychology-Curious"
+values:
+  - title: "Depth"
+    description: "They want the real answer, not the comfortable one."
+  - title: "Clarity"
+    description: "Complex psychology, delivered simply. No jargon, no vagueness."
+  - title: "Aesthetic Quality"
+    description: "They notice when something is beautiful. And when it isn't."
+  - title: "Psychological Realism"
+    description: "No toxic positivity. Growth that acknowledges how hard it actually is."
+  - title: "Self-Responsibility"
+    description: "They're not looking for a victim narrative. They're looking for tools."
+---

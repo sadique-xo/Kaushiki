@@ -1,0 +1,89 @@
+@import "tailwindcss";
+
+/* ═══════════════════════════════════
+   DESIGN TOKENS — Kaushiki
+═══════════════════════════════════ */
+:root {
+  /* Palette — coral/cream */
+  --warm-white: #FFFFFF;
+  --cream: #FFEDC7;
+  --cream-2: #FFA6A6;
+  --ink: #1A1714;
+  --ink-soft: #38342F;
+  --ink-muted: #6B6560;
+  --muted-color: #928D88;
+  --accent: #EB4C4C;
+  --accent-pale: #FFA6A6;
+  --accent-deep: #D43C3C;
+  --accent-soft: #FF7070;
+  --sage: #9BAF9A;
+  --blush: #FF7070;
+  --border-light: rgba(26, 23, 20, 0.08);
+  --border-md: rgba(26, 23, 20, 0.13);
+  --border-dark: rgba(255, 255, 255, 0.07);
+  --easing: cubic-bezier(0.16, 1, 0.3, 1);
+
+  /* shadcn compatibility */
+  --background: var(--warm-white);
+  --foreground: var(--ink);
+  --primary: var(--ink);
+  --primary-foreground: var(--warm-white);
+  --muted: var(--muted-color);
+  --muted-foreground: var(--ink-muted);
+  --accent-foreground: var(--ink);
+  --border: var(--border-light);
+  --ring: var(--accent);
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-accent: var(--accent);
+  --color-ink: var(--ink);
+  --color-cream: var(--cream);
+  --color-warm-white: var(--warm-white);
+  --font-sans: var(--font-syne), ui-sans-serif, system-ui, sans-serif;
+  --font-serif: var(--font-heading), ui-serif, Georgia, serif;
+  --font-mono: var(--font-dm-mono), ui-monospace, monospace;
+}
+
+/* ═══════════════════════════════════
+   BASE
+═══════════════════════════════════ */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--warm-white);
+  color: var(--ink);
+  font-family: var(--font-syne), ui-sans-serif, system-ui, sans-serif;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+::selection {
+  background: var(--accent-pale);
+  color: var(--ink);
+}
+
+::-webkit-scrollbar {
+  width: 2px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--warm-white);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--accent);
+}
+
+@keyframes marquee {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+
+.animate-marquee {
+  animation: marquee 26s linear infinite;
+}

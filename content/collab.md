@@ -1,0 +1,32 @@
+---
+eyebrow: "Brand Collaborations"
+title: "Built for brands\nthat think *deeper*."
+intro: "I don't just promote. I integrate. When I collaborate with a brand, it becomes part of a narrative — not a detour from it."
+cards:
+  - title: "Mental Health & Wellness Platforms"
+    description: "Brands building spaces for emotional growth, journaling, therapy, or self-development."
+  - title: "Design-Forward Startups"
+    description: "Products with aesthetic conviction and a story worth telling — beautifully."
+  - title: "Gen Z Lifestyle Brands"
+    description: "Brands that understand this generation doesn't want to be spoken at. They want to be seen."
+  - title: "Relationship & Emotional Education"
+    description: "Platforms that make emotional intelligence aspirational, not clinical."
+  - title: "AI-Driven Emotional Tools"
+    description: "The next generation of inner work — where technology meets psychological depth."
+  - title: "Conscious Fashion & Aesthetic Brands"
+    description: "Brands where identity, aesthetics, and intention are inseparable."
+deliverables:
+  label: "What I Deliver"
+  chips:
+    - "Insight-driven Reels"
+    - "Carousel Breakdowns"
+    - "Scriptwriting"
+    - "Emotional Monologues"
+    - "Caption Strategy"
+    - "Brand Voice Alignment"
+    - "Concept Ideation"
+    - "Creative Direction"
+    - "Visual Moodboarding"
+    - "Psychological Consulting"
+    - "Content Strategy"
+---
